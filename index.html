@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link href="./output.css" rel="stylesheet" />
+    <script src="../mathscribe/jquery-1.4.3.min.js"></script>
+	  <script src="../mathscribe/jqmath-etc-0.4.6.min.js" charset="utf-8"></script>
   </head>
   <body class="text-black text-justify font-[Jost] text-xs md:text-base">
     <nav
@@ -124,11 +126,11 @@
             methodology, probabilistic-based seismic soil liquefaction
             triggering curves are proposed.
           </p>
-          <div class="flex flex-col lg:flex-row my-2 gap-2">
-            <img src="/images/mani-1.png" alt="" />
-            <img src="/images/mani-2.png" alt="" />
+          <div class="flex flex-col lg:flex-row justify-between my-2">
+            <img src="/images/mani-1.png" alt="" class="my-2" />
+            <img src="/images/mani-2.png" alt="" class="my-2" />
           </div>
-          <p>
+          <p class="text-center">
             Observed surface manifestations after 2008 Wenchuan Earthquake (Cao
             et al., 2013)
           </p>
@@ -182,8 +184,8 @@
           <div
             class="flex flex-col lg:flex-row my-2 gap-2 justify-center items-center"
           >
-            <img src="/images/dpt-appa.png" alt="" />
-            <p>Schematic DPT Apparatus</p>
+            <div><img src="/images/dpt-appa.png" alt="" /></div>
+            <p class="text-center">Schematic DPT Apparatus</p>
           </div>
           <p>
             N120 is defined as the cumulative blow counts for a 30 cm
@@ -206,9 +208,12 @@
             al. (2013).
           </p>
           <img src="/images/eq-2.png" alt="" class="my-2" />
-          <div class="flex justify-start items-center gap-1">
-            <img src="/images/cn.png" alt="" class="my-2" />
-            <p>are initial vertical effective stress, respectively.</p>
+          <div class="flex items-center gap-2">
+                $$C_N=(100/σ^{'}_{v,0})^0.5, σ^{'}_{v,0}$$
+                <p>
+                   are initial vertical effective stress, respectively.
+                </p>
+            </div>
           </div>
         </div>
         <div class="lg:w-1/2 flex flex-col">
@@ -238,11 +243,11 @@
             al. (1997), we correct the amax value for the specific soil site of
             the case history.
           </p>
-          <div class="flex flex-col lg:flex-row my-2 gap-2">
+          <div class="flex flex-col lg:flex-row justify-between my-2">
             <img src="/images/usgs-1.png" alt="" class="my-2" />
             <img src="/images/usgs-2.png" alt="" class="my-2" />
           </div>
-          <p>
+          <p class="text-center my-2">
             USGS ShakeMap and prediction curves after 2008 Wenchuan Earthquake
           </p>
           <p>
@@ -337,7 +342,7 @@
       <div class="w-full h-1 bg-black my-2"></div>
       <section class="flex flex-col lg:flex-row lg:justify-center lg:gap-20">
         <div class="lg:w-1/2 flex flex-col items-center">
-          <img src="/images/table-4.png" alt="" />
+          <img src="/images/table-4.png" alt="" class="lg:w-1/2"/>
           <p>
             In Equation 8,  is the probability of liquefaction in decimal points
             (i.e.  means 0.30),  is not normalized for vertical overburden
@@ -405,50 +410,52 @@
           <p>
             Cao, Z. Z., Xu, X. Y., & Yuan, X. M. (2012). Dynamic Penetration
             Tests (DPT) at Gravelly Soils Liquefaction Sites. Applied Mechanics
-            and Materials, 204–208, 425–428. 
-            https://doi.org/10.4028/www.scientific.net/amm.204-208.425 <br> 
-            Cao, Z.,Youd, T. L., & Yuan, X. (2013). Chinese Dynamic Penetration Test for
-            Liquefaction Evaluation in Gravelly Soils. Journal of Geotechnical
-            and Geoenvironmental Engineering, 139(8), 1320–1333. 
-            https://doi.org/10.1061/(asce)gt.1943-5606.0000857 <br> Cetin, K. O.
-            (2000). “Reliability-based assessment of seismic soil liquefaction
-            initiation hazard”, Dissertation Submitted in Partial Fulfillment of
-            the Requirement for the Degree of Doctor of Philosophy, University
-            of California at Berkeley <br> Cetin, K., & Seed, R. B. (2004). Nonlinear
-            shear mass participation factor (rd) for cyclic shear stress ratio
-            evaluation. Soil Dynamics and Earthquake Engineering, 24(2),
-            103–113. https://doi.org/10.1016/j.soildyn.2003.10.008 <br> Cetin, K. O.,
-            Seed, R. B., Kayen, R. E., Moss, R. E., Bilge, H. T., Ilgac, M., &
-            Chowdhury, K. (2018). SPT-based probabilistic and deterministic
-            assessment of seismic soil liquefaction triggering hazard. Soil
-            Dynamics and Earthquake Engineering, 115, 698–709.
-            https://doi.org/10.1016/j.soildyn.2018.09.012 <br> Chang, W. J., &
-            Phantachang, T. (2016). Effects of gravel content on the shear
-            resistance of gravelly soils. Engineering Geology, 207, 78-90.
-            Chang, W. J., Chang, C. W., & Zeng, J. K. (2014). Liquefaction
-            characteristics of gap-graded gravelly soils in K0 condition. Soil
-            Dynamics and Earthquake Engineering, 56, 74-85. Chen, J. R., &
-            Kulhawy, F. H. (2014, February). Characteristics and
+            and Materials, 204–208, 425–428.
+            https://doi.org/10.4028/www.scientific.net/amm.204-208.425 <br />
+            Cao, Z.,Youd, T. L., & Yuan, X. (2013). Chinese Dynamic Penetration
+            Test for Liquefaction Evaluation in Gravelly Soils. Journal of
+            Geotechnical and Geoenvironmental Engineering, 139(8), 1320–1333.
+            https://doi.org/10.1061/(asce)gt.1943-5606.0000857 <br />
+            Cetin, K. O. (2000). “Reliability-based assessment of seismic soil
+            liquefaction initiation hazard”, Dissertation Submitted in Partial
+            Fulfillment of the Requirement for the Degree of Doctor of
+            Philosophy, University of California at Berkeley <br />
+            Cetin, K., & Seed, R. B. (2004). Nonlinear shear mass participation
+            factor (rd) for cyclic shear stress ratio evaluation. Soil Dynamics
+            and Earthquake Engineering, 24(2), 103–113.
+            https://doi.org/10.1016/j.soildyn.2003.10.008 <br />
+            Cetin, K. O., Seed, R. B., Kayen, R. E., Moss, R. E., Bilge, H. T.,
+            Ilgac, M., & Chowdhury, K. (2018). SPT-based probabilistic and
+            deterministic assessment of seismic soil liquefaction triggering
+            hazard. Soil Dynamics and Earthquake Engineering, 115, 698–709.
+            https://doi.org/10.1016/j.soildyn.2018.09.012 <br />
+            Chang, W. J., & Phantachang, T. (2016). Effects of gravel content on
+            the shear resistance of gravelly soils. Engineering Geology, 207,
+            78-90. Chang, W. J., Chang, C. W., & Zeng, J. K. (2014).
+            Liquefaction characteristics of gap-graded gravelly soils in K0
+            condition. Soil Dynamics and Earthquake Engineering, 56, 74-85.
+            Chen, J. R., & Kulhawy, F. H. (2014, February). Characteristics and
             Intercorrelations of Index Properties for Cohesionless Gravelly
             Soils. Geo-Congress 2014 Technical Papers.
-            https://doi.org/10.1061/9780784413272.001 <br> Lopez, J., Vera-Grunauer,
-            X. F., Rollins, K. M., & Salvatierra, G. (2018). Gravelly Soil
-            Liquefaction after the 2016 Ecuador Earthquake. In Geotechnical
-            Earthquake Engineering and Soil Dynamics V.
-            https://doi.org/10.1061/9780784481455.027 <br> Olson, S. M., Green, R.
-            A., Lasley, S. J., Martin, N. I., Cox, B. R., Rathje, E. M.,
-            Bachhuber, J., & French, J. C. (2011). Documenting Liquefaction and
-            Lateral Spreading Triggered by the 12 January 2010 Haiti
-            Earthquake. Earthquake Spectra, 27(1_suppl1), 93–116.
-            https://doi.org/10.1193/1.3639270 <br> Pirhadi, N., Wan, X., Zhang, H.,
-            Fang, Y., Jairi, I., & Hu, J. (2022). DPT-based seismic liquefaction
-            triggering assessment in gravelly soils based on expanded case
-            history dataset. Engineering Geology, 311, 106894.
-            https://doi.org/10.1016/j.enggeo.2022.106894 <br> Rollins, K. M.,
-            Amoroso, S., Milana, G., Minarelli, L., Vassallo, M., & Di Giulio,
-            G. (2020). Gravel Liquefaction Assessment Using the Dynamic Cone
-            Penetration Test Based on Field Performance from the 1976 Friuli
-            Earthquake. Journal of Geotechnical and Geoenvironmental
+            https://doi.org/10.1061/9780784413272.001 <br />
+            Lopez, J., Vera-Grunauer, X. F., Rollins, K. M., & Salvatierra, G.
+            (2018). Gravelly Soil Liquefaction after the 2016 Ecuador
+            Earthquake. In Geotechnical Earthquake Engineering and Soil Dynamics
+            V. https://doi.org/10.1061/9780784481455.027 <br />
+            Olson, S. M., Green, R. A., Lasley, S. J., Martin, N. I., Cox, B.
+            R., Rathje, E. M., Bachhuber, J., & French, J. C. (2011).
+            Documenting Liquefaction and Lateral Spreading Triggered by the 12
+            January 2010 Haiti Earthquake. Earthquake Spectra, 27(1_suppl1),
+            93–116. https://doi.org/10.1193/1.3639270 <br />
+            Pirhadi, N., Wan, X., Zhang, H., Fang, Y., Jairi, I., & Hu, J.
+            (2022). DPT-based seismic liquefaction triggering assessment in
+            gravelly soils based on expanded case history dataset. Engineering
+            Geology, 311, 106894. https://doi.org/10.1016/j.enggeo.2022.106894
+            <br />
+            Rollins, K. M., Amoroso, S., Milana, G., Minarelli, L., Vassallo,
+            M., & Di Giulio, G. (2020). Gravel Liquefaction Assessment Using the
+            Dynamic Cone Penetration Test Based on Field Performance from the
+            1976 Friuli Earthquake. Journal of Geotechnical and Geoenvironmental
             Engineering, 146(6).
             https://doi.org/10.1061/(asce)gt.1943-5606.0002252
           </p>
@@ -460,22 +467,24 @@
             Test–Based Procedure for Liquefaction Triggering Assessment of
             Gravelly Soils. Journal of Geotechnical and Geoenvironmental
             Engineering, 147(12).
-            https://doi.org/10.1061/(asce)gt.1943-5606.0002686 <br> Rollins, K. M.,
-            Roy, J., Athanasopoulos-Zekkos, A., Zekkos, D., Amoroso, S., Cao,
-            Z., Milana, G., Vassallo, M., & di Giulio, G. (2022). A New Vs-Based
-            Liquefaction-Triggering Procedure for Gravelly Soils. Journal of
-            Geotechnical and Geoenvironmental Engineering, 148(6).
-            https://doi.org/10.1061/(asce)gt.1943-5606.0002784 <br> Roy, J., Rollins,
-            K. M., Athanasopoulos-Zekkos, A., Harper, M., Linton, N., Basham, M.
-            R., Greenwood, W., & Zekkos, D. (2022). Gravel liquefaction
-            assessment using dynamic cone penetration and shear wave velocity
-            tests based on field performance from the 1964 Alaska
-            earthquake. Soil Dynamics and Earthquake Engineering, 160, 107357.
-            https://doi.org/10.1016/j.soildyn.2022.107357 <br> Seed, H. B., & Idriss,
-            I. M. (1971). Simplified Procedure for Evaluating Soil Liquefaction
-            Potential. Journal of the Soil Mechanics and Foundations Division,
-            97(9), 1249–1273. https://doi.org/10.1061/jsfeaq.0001662 <br> Seed, R.
-            B., Chang, S. W., Dickenson, S. E., and Bray, J. D. (1997)
+            https://doi.org/10.1061/(asce)gt.1943-5606.0002686 <br />
+            Rollins, K. M., Roy, J., Athanasopoulos-Zekkos, A., Zekkos, D.,
+            Amoroso, S., Cao, Z., Milana, G., Vassallo, M., & di Giulio, G.
+            (2022). A New Vs-Based Liquefaction-Triggering Procedure for
+            Gravelly Soils. Journal of Geotechnical and Geoenvironmental
+            Engineering, 148(6).
+            https://doi.org/10.1061/(asce)gt.1943-5606.0002784 <br />
+            Roy, J., Rollins, K. M., Athanasopoulos-Zekkos, A., Harper, M.,
+            Linton, N., Basham, M. R., Greenwood, W., & Zekkos, D. (2022).
+            Gravel liquefaction assessment using dynamic cone penetration and
+            shear wave velocity tests based on field performance from the 1964
+            Alaska earthquake. Soil Dynamics and Earthquake Engineering, 160,
+            107357. https://doi.org/10.1016/j.soildyn.2022.107357 <br />
+            Seed, H. B., & Idriss, I. M. (1971). Simplified Procedure for
+            Evaluating Soil Liquefaction Potential. Journal of the Soil
+            Mechanics and Foundations Division, 97(9), 1249–1273.
+            https://doi.org/10.1061/jsfeaq.0001662 <br />
+            Seed, R. B., Chang, S. W., Dickenson, S. E., and Bray, J. D. (1997)
             “Site-Dependent Seismic Response Including Recent Strong Motion
             Data.” Proc., Special Session on Earthquake Geotechnical
             Engineering, XIV International Conf. On Soil Mechanics and Foundtion
@@ -488,10 +497,10 @@
       </section>
     </main>
     <nav
-    class="bg-[#2474AE] w-full font-[Jomhuria] flex justify-between items-center p-6 mt-10 lg:px-20"
-  >
-    <img src="/images/Geo_Image.png" alt="" class="w-1/3 lg:w-36" />
-    <img src="/images/UCLA_Image.png" alt="" class="w-1/3 lg:w-36" />
-  </nav>
+      class="bg-[#2474AE] w-full font-[Jomhuria] flex justify-between items-center p-6 mt-10 lg:px-20"
+    >
+      <img src="/images/Geo_Image.png" alt="" class="w-1/3 lg:w-36" />
+      <img src="/images/UCLA_Image.png" alt="" class="w-1/3 lg:w-36" />
+    </nav>
   </body>
 </html>
