@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  font-family: Jomhuria;
+}
+h2 {
+  font-family: Jomhuria;
+  font-size: 3rem;
+  line-height: 100%;
+}
+h3 {
+  font-family: Jomhuria;
+  font-size: 1.75rem;
+  line-height: 100%;
+}
+p {
+  font-style: italic;
+}
