@@ -55,7 +55,7 @@
           increasing construction of gravelly earth fills, concerns about their
           liquefaction susceptibility have grown. Surprisingly, in these
           man-made earth fills, loose states were observed in some gravelly soil
-          layers. The 2008 Wenchuan Earthquake (Mw = 7.9) provided case
+          layers. The 2008 Wenchuan Earthquake (M<sub>w</sub> = 7.9) provided case
           histories revealing that natural gravelly soils can also exist in a
           loose state and, furthermore, they can liquefy. To assess this,
           probabilistic case history-based liquefaction-triggering relationships
@@ -65,7 +65,7 @@
           using alternative in-situ testing methods such as the dynamic
           penetration test (DPT), large penetration test (LPT), Becker
           penetration test (BPT), and geophysical surveys like shear wave
-          velocity (Vs) rather than relying solely on the standard penetration
+          velocity (V<sub>s</sub>) rather than relying solely on the standard penetration
           test (SPT) and cone penetration test (CPT). Simplified procedures are
           employed to assess the liquefaction-triggering potential of gravelly
           soil layers. The assessment process begins with identifying the
@@ -73,7 +73,7 @@
           table depth, seismic intensity, and duration parameters, and
           considering grain size gradation characteristics, with an emphasis on
           addressing their uncertainties. The assessment results are presented
-          in the cyclic stress ratio (CSR) vs. DPT blow count () domain. Based
+          in the cyclic stress ratio (CSR) vs. DPT blow count (N<sup>'</sup><sub>120</sub>) domain. Based
           on the developed case history database, probability-based
           liquefaction-triggering boundary curves have been established for
           engineering practice. Finally, these curves are compared with existing
@@ -98,7 +98,7 @@
             liquefaction. Following this earthquake, event and
             soil-type-specific seismic soil liquefaction curves were developed
             and presented by Cao et al. (2013) in the cyclic stress ratio (CSR)
-            and dynamic penetration test resistance (') space. The reason for
+            and dynamic penetration test resistance (N<sup>'</sup><sub>120</sub>) space. The reason for
             using the  capacity term for gravelly soils is that standard
             penetration test (SPT) and cone penetration test (CPT) results can
             be biased when applied to gravelly soils due to discrepancies in
@@ -191,19 +191,19 @@
             N120 is defined as the cumulative blow counts for a 30 cm
             penetration of the cone. Similar to the SPT procedure, corrections
             based on energy levels and normalization due to overburden pressure
-            must be applied to the DPT-Nin-situvalues. The conventional DPT
+            must be applied to the DPT-N<sub>in-situ</sub> values. The conventional DPT
             system has an average hammer energy efficiency ratio of 89%
-            (EDPT,avg). For all the case histories, a Pile Driving Analyzer
+            (E<sub>DPT,avg</sub>). For all the case histories, a Pile Driving Analyzer
             (PDA) device is used to capture various hammer energy measurements
-            (EDPT) during the test. It's worth noting that variations in the
+            (E<sub>DPT</sub>) during the test. It's worth noting that variations in the
             energy measurements are attributed to the variability in the rate of
-            hammer drop (Cao et al., 2012). In-situ DPT-N values (Nin-situ) are
+            hammer drop (Cao et al., 2012). In-situ DPT-N values (N<sub>in-situ</sub>) are
             corrected for energy efficiency following a similar procedure used
             in SPT (Rollins et al., 2021), as described in Equation 1. 
           </p>
           <img src="/images/eq-1.png" alt="" class="my-2" />
           <p>
-            DPT- values are normalized by using overburden correction factor ()
+            DPT- values are normalized by using overburden correction factor (C<sub>N</sub>)
             as given in Equation 2 based on the procedure suggested by Cao et
             al. (2013).
           </p>
@@ -227,10 +227,10 @@
           </p>
           <img src="/images/eq-3.png" alt="" />
           <p>
-            where  is the peak ground acceleration,  is the gravitational
-            acceleration,  is the total vertical stress,  is the effective
-            vertical stress and  is the nonlinear shear mass participation
-            factor. 
+            where a<sub>max</sub> is the peak ground acceleration, g is the gravitational
+            acceleration,σ<sub>v</sub> is the total vertical stress, σ<sup>'</sup><sub>v</sub> is the effective
+            vertical stress and r<sub>d</sub> is the nonlinear shear mass participation
+            factor.
           </p>
 
           <p>
@@ -239,8 +239,8 @@
             estimate the amax value for a hypothetical 'rock' site based on the
             rupture distance of the case history site. According to
             supplementary documentation from the USGS, this 'rock' site has a
-            Vs,30 of 760 m/s. Using the soil classification suggested by Seed et
-            al. (1997), we correct the amax value for the specific soil site of
+            V<sub>s,30</sub> of 760 m/s. Using the soil classification suggested by Seed et
+            al. (1997), we correct the a<sub>max</sub> value for the specific soil site of
             the case history.
           </p>
           <div class="flex flex-col lg:flex-row justify-between my-2">
@@ -258,10 +258,10 @@
             Kulhawy (2014), as provided in Equation 4. This formulation is
             applicable to well-graded gravels, which aligns with the composition
             of the database, primarily consisting of gravelly sand and sandy
-            gravel units, as shown in Figure 1.Saturated unit weight is
-            approximately assigned as .
+            gravel units, as shown in Figure 1. Saturated unit weight is
+            approximately assigned as.
           </p>
-          <img src="/images/eq-4.png" alt="" />
+          <img src="/images/eq-4.png" alt="" class="mt-2"/>
         </div>
       </section>
       <div class="w-full h-1 bg-black my-2"></div>
@@ -269,15 +269,15 @@
         <div class="lg:w-1/2">
           <p>
             To take into account of the variation for the shaking levels with
-            changing depths, nonlinear shear mass participation factor,  is
+            changing depths, nonlinear shear mass participation factor, r<sub>d</sub> is
             used. This parameter is estimated based on the procedure proposed by
             Cetin and Seed (2004) with its uncertainty, as given in Equation 5.
           </p>
-          <img src="/images/eq-5.png" alt="" />
-          <p>
-            Where,  is moment magnitude of the earthquake,  is the average shear
-            wave velocity in the first 12 m depth,  is the standard deviation of
-            the mass participation factor and  is the depth. Based on the
+          <img src="/images/eq-5.png" alt="" class="mt-2"/>
+          <p class="mt-2">
+            Where, M<sub>w</sub> is moment magnitude of the earthquake, V<sup>*</sup><sub>s,12 m</sub> is the average shear
+            wave velocity in the first 12 m depth, σ<sub>erd</sub> is the standard deviation of
+            the mass participation factor and d is the depth. Based on the
             screening protocol defined above, we evaluated 65 case histories.
             However, as the final step of the screening protocol, we excluded 19
             case histories from the database due to either a lack of soil
@@ -309,8 +309,8 @@
             uncertainties for separate contributing sources and the ability to
             monitor model parameters, including their interactions and
             covariances. The selection of a limit state function is of paramount
-            importance when assessing overburden correction (Kσ), duration
-            correction (), and grain size characteristics like gravel content
+            importance when assessing overburden correction (K<sub>σ</sub>), duration
+            correction (K<sub>Mw</sub>), and grain size characteristics like gravel content
             (GC) within a unified framework. As part of the Maximum Likelihood
             Assessment, a limit state function described in Equation 6 is
             chosen, taking into account parameters suggested by Cetin et al.
@@ -320,11 +320,11 @@
           <img src="/images/eq-6.png" alt="" />
           <p>
             Assessment to maximize the likelihood function has been performed
-            however  and is concluded to be “0” which indicates no importance
+            however θ<sub>3</sub> and θ<sub>6</sub> is concluded to be “0” which indicates no importance
             for the model. On the other hand, it should be noted that grain size
             characteristics play a crucial role in seismic soil liquefaction and
             with increasing number of data points, gravel content is believed to
-            contribute more in probabilistic efforts. Accordingly,  and  is
+            contribute more in probabilistic efforts. Accordingly, θ<sub>3</sub> and θ<sub>6</sub> is
             excluded and the efforts are continued with the formulation
             presented in Equation 7.
           </p>
@@ -344,13 +344,13 @@
         <div class="lg:w-1/2 flex flex-col items-center">
           <img src="/images/table-4.png" alt="" class="lg:w-1/2"/>
           <p>
-            In Equation 8,  is the probability of liquefaction in decimal points
-            (i.e.  means 0.30),  is not normalized for vertical overburden
+            In Equation 8, P<sub>L</sub> is the probability of liquefaction in decimal points
+            (i.e. P<sub>L</sub> = 30% means 0.30), CSR<sub>σ'v,Mw</sub> is not normalized for vertical overburden
             pressure and/or magnitude effects (since these corrections are
-            assessed within the formulation itself),  is the atmospheric
-            pressure, and  is the standard cumulative normal distribution.
-            Moreover, cyclic resistance ratio, , for a specific probability of
-            liquefaction can be estimated by Equation 9 where  is the inverse of
+            assessed within the formulation itself), P<sub>a</sub> is the atmospheric
+            pressure, and Φ is the standard cumulative normal distribution.
+            Moreover, cyclic resistance ratio, CRR, for a specific probability of
+            liquefaction can be estimated by Equation 9 where Φ<sup>-1</sup>(P<sub>L</sub>) is the inverse of
             the standard cumulative normal distribution. The resulting
             liquefaction triggering boundary curves for 46 case histories are
             presented in Figure 2. A comparison between the suggested model by
@@ -359,7 +359,7 @@
             database and number of case history data points included in the
             specific database. 
           </p>
-          <img src="/images/eq-final.png" alt="" />
+          <img src="/images/eq-final.png" alt="" class="mt-3"/>
           <div class="flex flex-col lg:flex-row my-2 gap-2">
             <div class="flex flex-col justify-center items-center">
               <img src="/images/fig-2.png" alt="" />
