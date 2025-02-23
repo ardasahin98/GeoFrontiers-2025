@@ -1,511 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arda Sahin | GeoCongress 2024 Poster Presentation</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./output.css" rel="stylesheet" />
-    <script src="../mathscribe/jquery-1.4.3.min.js"></script>
-	  <script src="../mathscribe/jqmath-etc-0.4.6.min.js" charset="utf-8"></script>
-  </head>
-  <body class="text-black text-justify font-[Jost] text-xs md:text-base">
-    <nav
-      class="bg-[#2474AE] w-full font-[Jomhuria] p-6 lg:px-20 flex flex-col justify-center gap-2"
-    >
-    <div class="flex justify-between items-center">
-      <img src="/images/Geo_Image.png" alt="" class="w-1/3 lg:w-36" />
-      <img src="/images/UCLA_Image.png" alt="" class="w-1/3 lg:w-36" />
-    </div>
-      <div class="flex justify-center items-center">
-        <h1 class="text-xl lg:text-6xl lg:w-1/2 text-center text-white px-1">
-          Seismic Soil Liquefaction Triggering Assessment of Gravelly Soil Case
-          Histories
-        </h1>
-      </div>
-    </nav>
-    <main class="px-10 lg:px-20 flex flex-col gap-10">
-      <section
-        class="font-[Jomhuria] text-2xl flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-36 mt-12 text-center"
-      >
-        <div class="flex flex-col justify-center items-center">
-          <img src="/images/Image_Arda.png" alt="" class="w-1/2 lg:w-40" />
-          <p class="text-4xl">Arda Sahin</p>
-          <p>Ph.D Student</p>
-          <p>University of California, Los Angeles</p>
-          <p>arda120222@ucla.edu</p>
-        </div>
-        <div class="flex flex-col justify-center items-center">
-          <img src="/images/UCLA_KOC.png" alt="" class="w-1/2 lg:w-40" />
-          <p class="text-4xl">Kemal Onder Cetin</p>
-          <p>Prof. Dr., M. ASCE</p>
-          <p>Middle East Technical University</p>
-          <p>ocetin@metu.edu.tr</p>
-        </div>
-      </section>
-      <section>
-        <h2 class="text">Abstract</h2>
-        <p>
-          While the liquefaction susceptibility of fully saturated clean sands
-          and their mixtures with low-plasticity fines has long been recognized
-          in liquefaction engineering, gravelly soils were traditionally
-          considered non-liquefiable due to their high pore pressure dissipation
-          capacity, attributed to their larger grain sizes. However, with the
-          increasing construction of gravelly earth fills, concerns about their
-          liquefaction susceptibility have grown. Surprisingly, in these
-          man-made earth fills, loose states were observed in some gravelly soil
-          layers. The 2008 Wenchuan Earthquake (M<sub>w</sub> = 7.9) provided case
-          histories revealing that natural gravelly soils can also exist in a
-          loose state and, furthermore, they can liquefy. To assess this,
-          probabilistic case history-based liquefaction-triggering relationships
-          have been developed. This paper discusses 65 available case histories
-          of gravelly soil liquefaction, compiled from four earthquakes with
-          magnitudes ranging from 6.5 to 9.2. It also explores the advantages of
-          using alternative in-situ testing methods such as the dynamic
-          penetration test (DPT), large penetration test (LPT), Becker
-          penetration test (BPT), and geophysical surveys like shear wave
-          velocity (V<sub>s</sub>) rather than relying solely on the standard penetration
-          test (SPT) and cone penetration test (CPT). Simplified procedures are
-          employed to assess the liquefaction-triggering potential of gravelly
-          soil layers. The assessment process begins with identifying the
-          susceptible critical layer, estimating in-situ density, groundwater
-          table depth, seismic intensity, and duration parameters, and
-          considering grain size gradation characteristics, with an emphasis on
-          addressing their uncertainties. The assessment results are presented
-          in the cyclic stress ratio (CSR) vs. DPT blow count (N<sup>'</sup><sub>120</sub>) domain. Based
-          on the developed case history database, probability-based
-          liquefaction-triggering boundary curves have been established for
-          engineering practice. Finally, these curves are compared with existing
-          probabilistic models found in the literature.
-        </p>
-      </section>
-      <div class="w-full h-1 bg-black my-2"></div>
-      <section class="flex flex-col lg:flex-row lg:justify-center lg:gap-20">
-        <div class="lg:w-1/2">
-          <h2>Introduction</h2>
-          <p>
-            Liquefaction can be defined as the reduction in shear strength and
-            stiffness of saturated soils due to rapid cyclic loading, such as
-            earthquakes or vibrating loads. Assessing the liquefaction potential
-            of gravelly soils is essential for engineering practice. However,
-            susceptibility to seismic soil liquefaction varies with soil type.
-            Gravelly soils have often been incorrectly considered
-            non-liquefiable (Tsuchida, 1970) due to their high capacity for pore
-            pressure dissipation and the lack of case history data.
-            Nevertheless, after the 2008 Wenchuan Earthquake, it became evident
-            that loosely deposited gravelly soils are indeed susceptible to
-            liquefaction. Following this earthquake, event and
-            soil-type-specific seismic soil liquefaction curves were developed
-            and presented by Cao et al. (2013) in the cyclic stress ratio (CSR)
-            and dynamic penetration test resistance (N<sup>'</sup><sub>120</sub>) space. The reason for
-            using the  capacity term for gravelly soils is that standard
-            penetration test (SPT) and cone penetration test (CPT) results can
-            be biased when applied to gravelly soils due to discrepancies in
-            apparatus dimensions and grain size. Using relatively larger
-            equipment like the dynamic penetration test (DPT) helps eliminate
-            grain size effects in gravelly soils. While DPT apparatus had been
-            used in China since the 1950s to correlate penetration resistance
-            with bearing capacity for gravelly soils, researchers began
-            employing it for seismic soil liquefaction assessments of gravelly
-            soils. Consequently, new investigations were conducted for past
-            earthquakes, such as the 1964 Alaska earthquake (Roy et al., 2022)
-            or the 1976 Friuli earthquake (Rollins et al., 2020), to determine
-            the capacity term. Furthermore, this method has been applied to
-            recent earthquakes, such as the 2016 Ecuador earthquake (Lopez et
-            al., 2018) or the 2010 Haiti earthquake (Olson et al., 2011), where
-            surface manifestations of gravelly soil liquefaction were observed.
-            Inspired by Cao et al. (2013), global assessments have been
-            conducted recently by researchers (Rollins et al., 2021 and Pirhadi
-            et al., 2022), utilizing case histories that include DPT
-            measurements. Moreover, various researchers have conducted
-            laboratory experiments to understand the liquefaction phenomenon in
-            gravelly soils (Chang et al., 2014, Chang and Phantachang, 2016,
-            etc.). Within the scope of this study, a protocol is implemented to
-            assess the 65 DPT-based case histories. Using maximum likelihood
-            methodology, probabilistic-based seismic soil liquefaction
-            triggering curves are proposed.
-          </p>
-          <div class="flex flex-col lg:flex-row justify-between my-2">
-            <img src="/images/mani-1.png" alt="" class="my-2" />
-            <img src="/images/mani-2.png" alt="" class="my-2" />
-          </div>
-          <p class="text-center">
-            Observed surface manifestations after 2008 Wenchuan Earthquake (Cao
-            et al., 2013)
-          </p>
-        </div>
-        <div class="lg:w-1/2 flex flex-col justify-center">
-          <h2>Case History Database</h2>
-          <p>
-            The newly proposed database inspired by the existing literature
-            consists of 4 different earthquakes with magnitudes ranging between
-            6.5 to 9.2. A summary table showing the earthquakes included in the
-            database is presented in Table 1.
-          </p>
-          <img src="/images/table-1.png" alt="" />
-          <p>
-            As can be shown from the gradation curves presented in Figure 1, the
-            soil profiles are mainly consisting of gravelly soils either
-            gravelly sands or sandy gravels. The statistics of the gradation
-            characteristics for the case histories are summarized in Table 2.
-          </p>
-          <img src="/images/fig-1.png" alt="" />
-          <p>
-            Based on the gradation characteristics, the susceptibility of soil
-            layers is assessed, and the loosest fully saturated soil layer is
-            chosen as the critical layer. Subsequently, a protocol is developed
-            for the selected critical layer to conduct an unbiased screening for
-            all the case histories. This case history evaluation protocol is
-            divided into 'load' and 'capacity' terms.
-          </p>
-          <img src="/images/table-2.png" alt="" />
-        </div>
-      </section>
-      <div class="w-full h-1 bg-black my-2"></div>
-      <h2 class="text-center">Case History Protocol</h2>
-      <section class="flex flex-col lg:flex-row lg:justify-center lg:gap-20">
-        <div class="lg:w-1/2">
-          <h3 class="text">
-            Determination of Resistance Term – Site Investigation 
-          </h3>
-          <p>
-            To characterize the stiffness and density states of the soil at the
-            site, the DPT apparatus has been chosen to obtain an unbiased
-            resistance term. This apparatus consists of a larger cone with a
-            diameter of 74 mm and an apex angle of 60 degrees, which is larger
-            than that used in CPT, generating greater energy with a 120 kg
-            hammer dropped from a height of 100 cm, in contrast to the SPT
-            apparatus. These conditions allow for obtaining unbiased results,
-            especially in gravelly soils. During the test, the number of blows
-            is counted at 10 cm intervals and recorded as DPT blow counts (Cao
-            et al., 2013). 
-          </p>
-          <div
-            class="flex flex-col lg:flex-row my-2 gap-2 justify-center items-center"
-          >
-            <div><img src="/images/dpt-appa.png" alt="" /></div>
-            <p class="text-center">Schematic DPT Apparatus</p>
-          </div>
-          <p>
-            N120 is defined as the cumulative blow counts for a 30 cm
-            penetration of the cone. Similar to the SPT procedure, corrections
-            based on energy levels and normalization due to overburden pressure
-            must be applied to the DPT-N<sub>in-situ</sub> values. The conventional DPT
-            system has an average hammer energy efficiency ratio of 89%
-            (E<sub>DPT,avg</sub>). For all the case histories, a Pile Driving Analyzer
-            (PDA) device is used to capture various hammer energy measurements
-            (E<sub>DPT</sub>) during the test. It's worth noting that variations in the
-            energy measurements are attributed to the variability in the rate of
-            hammer drop (Cao et al., 2012). In-situ DPT-N values (N<sub>in-situ</sub>) are
-            corrected for energy efficiency following a similar procedure used
-            in SPT (Rollins et al., 2021), as described in Equation 1. 
-          </p>
-          <img src="/images/eq-1.png" alt="" class="my-2" />
-          <p>
-            DPT- values are normalized by using overburden correction factor (C<sub>N</sub>)
-            as given in Equation 2 based on the procedure suggested by Cao et
-            al. (2013).
-          </p>
-          <img src="/images/eq-2.png" alt="" class="my-2" />
-          <div class="flex items-center gap-2">
-                $$C_N=(100/σ^{'}_{v,0})^0.5, σ^{'}_{v,0}$$
-                <p>
-                   are initial vertical effective stress, respectively.
-                </p>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="margin-left: 40px;">
+                <img src="/logos/GeoFrontiers_Logo.png" alt="GeoCongress" style="width: 350px;">
             </div>
-          </div>
+            <div style="display: flex; gap: 10px; justify-content: space-around; align-items: center; margin-right: 40px;" class="nav-images">
+                <img src="/logos/UC_Logo.png" alt="GeoCongress" style="width: 150px; height: auto;">
+                <img src="/logos/UW_Logo.png" alt="GeoCongress" style="width: 150px; height: auto;">
+                <img src="/logos/OSU_Logo.png" alt="GeoCongress" style="width: 150px; height: auto;">
+                <img src="/logos/MSU_Logo.png" alt="UCLA" style="width: 150px; height: auto;">
+                <img src="/logos/SWRI_Logo.png" alt="GeoCongress" style="width: 150px; height: auto;">
+            </div>
         </div>
-        <div class="lg:w-1/2 flex flex-col">
-          <h3 class="text">
-            Determination of Capacity Term  - Cyclic Stress Ratio (CSR)
-          </h3>
-          <p>
-            To address the “capacity” term in each case history, simplified
-            procedure proposed by Seed and Idriss (1971) for Cyclic Stress Ratio
-            (CSR) term is used, as given in Equation 3. 
-          </p>
-          <img src="/images/eq-3.png" alt="" />
-          <p>
-            where a<sub>max</sub> is the peak ground acceleration, g is the gravitational
-            acceleration,σ<sub>v</sub> is the total vertical stress, σ<sup>'</sup><sub>v</sub> is the effective
-            vertical stress and r<sub>d</sub> is the nonlinear shear mass participation
-            factor.
-          </p>
+        <h1 style="display: flex; justify-content: center; font-size: 32px; margin-left: 200px; margin-right: 200px; padding-bottom: 0; line-height: 150%;" class="title">Next Generation Liquefaction Laboratory Database for 
+            Susceptibility and Cyclic Strength Assessment
+            </h1>
+        <h1 style="font-size: 20px; margin-left: 350px; margin-right: 350px; padding-bottom: 20px; line-height: 150%;" class="title">Arda Sahin, Amalesh Jana, Christine Z. Beyzaei, 
+            Rodolfo Sancio, Kristin J. Ulmer, Scott J. Brandenberg, 
+            Steven L. Kramer, Jonathan P. Stewart, and Armin W. Stuedlein
+            
+            </h1>
+        <div style="padding-bottom: 10px;">
+            <a style="font-size: 18px; color: white" href="https://nextgenerationliquefaction.org">NGL Website Link</a>
+        </div>
+    </nav>
+    
+    <main class="content">
+            <div style="display: flex; flex-wrap: wrap; max-width: 1100px; justify-content: space-around; align-items: center;">
+                <div class="author">
+                    <img src="/profile_pictures/Arda_Sahin_Photo.JPG" alt="Arda Sahin">
+                    <p style="font-weight: bold;" class="author-name">Arda Sahin</p>
+                    <p>Ph.D Candidate</p>
+                    <p>University of California, Los Angeles</p>
+                    <p>arda120222@ucla.edu</p>
+                </div>
+                <div class="author">
+                    <img src="/profile_pictures/amalesh_jana_photo.jpg" alt="Amalesh Jana">
+                    <p style="font-weight: bold;" class="author-name">Amalesh Jana</p>
+                    <p>Assistant Professor</p>
+                    <p>Montana State University</p>
+                    <p>amalesh.jana@montana.edu</p>
+                </div>
+                <div class="author">
+                    <img src="/profile_pictures/christine_beyzaei_photo.jpg" alt="Christine Beyzaei">
+                    <p style="font-weight: bold;" class="author-name">Christine Z. Beyzaei</p>
+                    <p>Ph.D</p>
+                    <p>Formerly at University of California, Berkeley</p>
+                </div>
+                <div class="author">
+                    <img src="/profile_pictures/rodolfo_sancio_photo.jpg" alt="Rodolfo Sancio">
+                    <p style="font-weight: bold;" class="author-name">Rodolfo Sancio</p>
+                    <p>Ph.D</p>
+                    <p>Geosyntec Consultants</p>
+                    <p>rsancio@geosyntec.com</p>
+                </div>
+                <div class="author">
+                    <img src="/profile_pictures/Kristin_Ulmer_photo.jpeg" alt="Kristin Ulmer">
+                    <p style="font-weight: bold;" class="author-name">Kristin J. Ulmer</p>
+                    <p>Ph.D</p>
+                    <p>Southwest Research Institute</p>
+                    <p>kristin.ulmer@swri.org</p>
+                </div>
+                <div class="author">
+                    <img src="/profile_pictures/Scott_Brandenberg_photo.jpg" alt="Scott Brandenberg">
+                    <p style="font-weight: bold;" class="author-name">Scott J. Brandenberg</p>
+                    <p>Professor</p>
+                    <p>University of California, Los Angeles</p>
+                    <p>sjbrandenberg@g.ucla.edu</p>
+                </div>
+                <div class="author">
+                    <img src="/profile_pictures/Steve_Kramer_photo.jpeg" alt="Steve Kramer">
+                    <p style="font-weight: bold;" class="author-name">Steven L. Kramer</p>
+                    <p>Professor Emeritus</p>
+                    <p>University of Washington</p>
+                    <p>kramer@uw.edu</p>
+                </div>
+                <div class="author">
+                    <img src="/profile_pictures/jonathan_stewart_photo.jpeg" alt="Jonathan Stewart">
+                    <p style="font-weight: bold;" class="author-name">Jonathan P. Stewart</p>
+                    <p>Professor</p>
+                    <p>University of California, Los Angeles</p>
+                    <p>jstewart@seas.ucla.edu</p>
+                </div>
+                <div class="author">
+                    <img src="/profile_pictures/Armin_Stuedlein_photo.jpg" alt="Armin Stuedlein">
+                    <p style="font-weight: bold;" class="author-name">Armin W. Stuedlein</p>
+                    <p>Professor</p>
+                    <p>Oregon State University</p>
+                    <p>armin.stuedlein@oregonstate.edu</p>
+                </div>
+            </div>
 
-          <p>
-            To assess the intensity of shaking levels, we implement
-            event-specific ShakeMaps from the U.S. Geological Survey. We
-            estimate the amax value for a hypothetical 'rock' site based on the
-            rupture distance of the case history site. According to
-            supplementary documentation from the USGS, this 'rock' site has a
-            V<sub>s,30</sub> of 760 m/s. Using the soil classification suggested by Seed et
-            al. (1997), we correct the a<sub>max</sub> value for the specific soil site of
-            the case history.
-          </p>
-          <div class="flex flex-col lg:flex-row justify-between my-2">
-            <img src="/images/usgs-1.png" alt="" class="my-2" />
-            <img src="/images/usgs-2.png" alt="" class="my-2" />
-          </div>
-          <p class="text-center my-2">
-            USGS ShakeMap and prediction curves after 2008 Wenchuan Earthquake
-          </p>
-          <p>
-            We perform calculations for the total and effective vertical stress
-            at the mid-depth of the selected critical layer, and uncertainties
-            are assigned based on variations within this layer. The dry unit
-            weight is estimated following the recommendations of Chen and
-            Kulhawy (2014), as provided in Equation 4. This formulation is
-            applicable to well-graded gravels, which aligns with the composition
-            of the database, primarily consisting of gravelly sand and sandy
-            gravel units, as shown in Figure 1. Saturated unit weight is
-            approximately assigned as.
-          </p>
-          <img src="/images/eq-4.png" alt="" class="mt-2"/>
-        </div>
-      </section>
-      <div class="w-full h-1 bg-black my-2"></div>
-      <section class="flex flex-col lg:flex-row lg:justify-center lg:gap-20">
-        <div class="lg:w-1/2">
-          <p>
-            To take into account of the variation for the shaking levels with
-            changing depths, nonlinear shear mass participation factor, r<sub>d</sub> is
-            used. This parameter is estimated based on the procedure proposed by
-            Cetin and Seed (2004) with its uncertainty, as given in Equation 5.
-          </p>
-          <img src="/images/eq-5.png" alt="" class="mt-2"/>
-          <p class="mt-2">
-            Where, M<sub>w</sub> is moment magnitude of the earthquake, V<sup>*</sup><sub>s,12 m</sub> is the average shear
-            wave velocity in the first 12 m depth, σ<sub>erd</sub> is the standard deviation of
-            the mass participation factor and d is the depth. Based on the
-            screening protocol defined above, we evaluated 65 case histories.
-            However, as the final step of the screening protocol, we excluded 19
-            case histories from the database due to either a lack of soil
-            profile information or the presence of two susceptible layers in the
-            soil profile with similar strength parameters against liquefaction
-            (double suspicion). Table 3 provides a comparative summary of key
-            database statistics after implementing the screening protocol for
-            the remaining 46 case histories.
-          </p>
-          <img src="/images/table-3.png" alt="" />
-        </div>
-        <div class="lg:w-1/2">
-          <h2 class="text-center">
-            Development of Probabilistic Liquefaction Curves
-          </h2>
-          <p>
-            Developing a database and processing case histories represent some
-            of the most challenging aspects of liquefaction studies, often
-            requiring the researcher's judgment. In recent years, various
-            approaches have been developed by numerous researchers to create
-            liquefaction triggering correlations for gravelly soils (Cao et al.,
-            2013; Rollins et al., 2021 and 2022; Pirhadi et al., 2022). The
-            aforementioned case history database is employed to develop
-            liquefaction triggering correlations using the Maximum Likelihood
-            Estimation (MLE) method, following the protocol suggested by Cetin
-            (2000), which outlines specific formulations in detail. MLE shares a
-            common goal with multidimensional "regression" analyses but offers
-            advantages, such as a more appropriate treatment of aleatory
-            uncertainties for separate contributing sources and the ability to
-            monitor model parameters, including their interactions and
-            covariances. The selection of a limit state function is of paramount
-            importance when assessing overburden correction (K<sub>σ</sub>), duration
-            correction (K<sub>Mw</sub>), and grain size characteristics like gravel content
-            (GC) within a unified framework. As part of the Maximum Likelihood
-            Assessment, a limit state function described in Equation 6 is
-            chosen, taking into account parameters suggested by Cetin et al.
-            (2018). MLE enables the simultaneous assessment of liquefaction
-            triggering relationships along with these corrections.
-          </p>
-          <img src="/images/eq-6.png" alt="" />
-          <p>
-            Assessment to maximize the likelihood function has been performed
-            however θ<sub>3</sub> and θ<sub>6</sub> is concluded to be “0” which indicates no importance
-            for the model. On the other hand, it should be noted that grain size
-            characteristics play a crucial role in seismic soil liquefaction and
-            with increasing number of data points, gravel content is believed to
-            contribute more in probabilistic efforts. Accordingly, θ<sub>3</sub> and θ<sub>6</sub> is
-            excluded and the efforts are continued with the formulation
-            presented in Equation 7.
-          </p>
-          <img src="/images/eq-7.png" alt="" />
-          <p>
-            The five model coefficients (i.e.:  through , and ) are evaluated
-            all at once with the aim to maximize the likelihood function
-            presented in Equation 7 and 8. Final recommended relationships for
-            seismic soil liquefaction triggering are presented in Equation 8 and
-            9 along with the model coefficient presented in Table 4. 
-          </p>
-          <img src="images/eq-8-9.png" alt="" />
-        </div>
-      </section>
-      <div class="w-full h-1 bg-black my-2"></div>
-      <section class="flex flex-col lg:flex-row lg:justify-center lg:gap-20">
-        <div class="lg:w-1/2 flex flex-col items-center">
-          <img src="/images/table-4.png" alt="" class="lg:w-1/2"/>
-          <p>
-            In Equation 8, P<sub>L</sub> is the probability of liquefaction in decimal points
-            (i.e. P<sub>L</sub> = 30% means 0.30), CSR<sub>σ'v,Mw</sub> is not normalized for vertical overburden
-            pressure and/or magnitude effects (since these corrections are
-            assessed within the formulation itself), P<sub>a</sub> is the atmospheric
-            pressure, and Φ is the standard cumulative normal distribution.
-            Moreover, cyclic resistance ratio, CRR, for a specific probability of
-            liquefaction can be estimated by Equation 9 where Φ<sup>-1</sup>(P<sub>L</sub>) is the inverse of
-            the standard cumulative normal distribution. The resulting
-            liquefaction triggering boundary curves for 46 case histories are
-            presented in Figure 2. A comparison between the suggested model by
-            Rollins et al. (2021) and this study is presented in Figure 3. The
-            difference between the models is attributed to the use of different
-            database and number of case history data points included in the
-            specific database. 
-          </p>
-          <img src="/images/eq-final.png" alt="" class="mt-3"/>
-          <div class="flex flex-col lg:flex-row my-2 gap-2">
-            <div class="flex flex-col justify-center items-center">
-              <img src="/images/fig-2.png" alt="" />
-              <img src="/images/fig-2-text-1.png" alt="" />
-              <img src="/images/fig-2-text-2.png" alt="" />
+
+        <section class="abstract">
+            <h2>Abstract</h2>
+            <p>We present a database under development containing data from cyclic laboratory tests on soils containing appreciable fines fractions from published studies. The tested fine-grained soils have varying levels of plasticity and liquefaction susceptibility. We focus on field sites that have been the subject of detailed site characterization programs, typically consisting of cone penetration testing, borings with thin-walled tube/piston sampling, and cyclic laboratory testing. The data are organized into a publicly accessible database to facilitate future model development. Some of the data were included in the development of commonly used susceptibility models, which have differences in the range of plasticity characteristics for which a soil is considered susceptible. A point of agreement among existing models is that cyclic testing of fine-grained soils is the best approach to assess susceptibility and cyclic strength loss potential. Cyclic testing is not always feasible, and the community database presented here will have a key role in supporting the eventual development of probabilistic models for liquefaction susceptibility and cyclic strength relationships for cohesive soils. An important element of eventual model development is deciding upon indices from cyclic tests that are indicative of different types of soil behavior. To this end, we describe response parameters derived from stress-strain curves that hold promise for distinguishing “sand-like” (liquefaction) from “clay-like” (cyclic softening) soil behavior.</p>
+        </section>
+
+        <section class="introduction">
+            <h2>Introduction</h2>
+            <p>Earthquake-induced ground failure analysis proceeds in three distinct phases, including evaluation of: i) susceptibility, ii) cyclic resistance expressed as a cyclic stress ratio, and iii) consequences. This paper focuses predominantly on susceptibility. The definition of susceptibility was discussed at a 2023 PEER Workshop (Stuedlein et al. 2023a). Areas of agreement during the workshop were (1) plasticity is fundamentally related to susceptibility, (2) susceptibility assessment guides selection of engineering evaluation procedures used to evaluate cyclic strength in step (ii), and (3) cyclic laboratory testing is the best way to assess susceptibility and define cyclic strength of fine-grained soils for which relatively undisturbed samples can be retrieved. An area that was not resolved was whether environmental conditions, loading conditions, and soil state should be considered in susceptibility criteria. For instance, in a low seismicity area, a clean, dense sand material has a very low probability of triggering and might be considered “not-susceptible” since it is predicted to not trigger under design-level shaking. Furthermore, the ratio of water content to liquid limit, wc/LL, has been used in some susceptibility criteria for fine-grained soils, where wc/LL is a measure of the soil state. According to such criteria, a susceptible soil could become non-susceptible by consolidating it to a lower water content. The workshop also included discussion of whether different researchers may have used the term “susceptibility” in different ways. Boulanger and Idriss (2024) posited that susceptibility assessment does not influence cyclic strength when a logic tree approach is used and suggested the phrase “cyclic strength evaluation criteria” be used instead of “susceptibility criteria”. 
+                In this paper, we refer to susceptibility as distinguishing sand-like from clay-like behavior based on mineral composition, regardless of soil state, loading conditions, or environmental conditions. High plasticity, clay-like soils are not susceptible to liquefaction, and should be analyzed using cyclic softening procedures (Boulanger and Idriss 2006). Low plasticity sand-like soils are susceptible to liquefaction, even if they are very dense and are predicted to not trigger. Furthermore, unsaturated sand-like soils are considered susceptible to liquefaction because we believe that degree of saturation is best accommodated by adjustments to the cyclic resistance ratio rather than the susceptibility criteria. 
+                Cyclic laboratory testing cannot be performed for all projects due to budget and schedule constraints. Empirical relationships based on available cyclic laboratory testing are therefore important. Raw data in the form of stress and strain time-series have historically not been published alongside papers and reports describing the results of laboratory studies. Rather, the authors interpret the data in the manner they see fit and publish summaries of the data and analysis in figures and/or tables. Synthesizing the findings across a range of published studies is often challenging because authors often choose to prepare their figures in different ways, and processed data presented in some studies is not available in others. For these reasons, organizing the raw data into a publicly accessible database substantially advances the profession’s ability to evaluate existing models and develop new models from the available cyclic laboratory test data. 
+                We present results of recent work to organize cyclic laboratory test data performed on fine-grained soils into the Next Generation Liquefaction (NGL) relational database (Ulmer et al. (2023) https://doi.org/10.21222/C23P70). Each study contains extensive field investigations, including cone penetration testing, drilling and sampling using thin-walled tubes (many using piston samplers), and laboratory testing including index tests and cyclic triaxial and/or direct simple shear tests. We first present an overview of the studies included in the NGL database. Finally, we present a number of different metrics that we consider promising for quantifying susceptibility based on measured stress-strain responses.
+                </p>
+        </section>
+
+        <section class="datasets">
+            <h2>Laboratory Test Datasets</h2>
+            <p>Locations of the sites from which we have organized data into the NGL database are presented in Fig. 1 and to-date include six sites in the Pacific Northwest of the U.S. with testing performed at Oregon State University, seven sites in Adapazari, Türkiye, with testing performed at ZETAS laboratory in Istanbul and at the UC Berkeley advanced geotechnical laboratory, and seven sites in Christchurch, New Zealand with testing performed at the University of Canterbury. Table 1 summarizes the test types, number of cyclic tests, and Atterberg limit ranges for the tested soils. A total of 207 CDSS and 145 CTX tests have been added to the NGL database as part of this study, and data from each region from Fig. 1 are discussed below.</p>
+            <img style="width:750px" src="/images/table-1.png" alt="Table 1">
+            <p>After the 1999 Kocaeli earthquake (M7.5) in Türkiye, significant settlements and deformations of foundation systems were observed in Adapazari, primarily due to localized cyclic failures of fine-grained foundation soils. The region is characterized by interlayered low plasticity silty and clayey deposits. Numerous researchers visited Adapazari post-earthquake to document ground failures systematically along surveyed lines (Bray and Stewart, 2000). Sancio (2003) and Bray and Sancio (2006) describe subsequent site investigations, which included borings with Standard Penetration Tests (SPT) and Cone Penetration Tests (CPT). Relatively undisturbed soil samples were collected from boreholes using thin-walled samplers (the resulting soil specimens are referred to subsequently as “intact”) and various laboratory tests were conducted, including cyclic triaxial tests, post-cyclic monotonic tests, and consolidation tests. Fig. 2 presents results of one of the cyclic triaxial tests on an intact specimen in a standard format applied for this project (data from Sancio 2003).</p>
+
+            <img style="width:750px" src="/images/fig-1.png" alt="Figure 1">
+
+            <div style="display: flex; flex-direction: row;">
+                <p>After the 1999 Kocaeli earthquake (M7.5) in Türkiye, significant settlements and deformations of foundation systems were observed in Adapazari, primarily due to localized cyclic failures of fine-grained foundation soils. The region is characterized by interlayered low plasticity silty and clayey deposits. Numerous researchers visited Adapazari post-earthquake to document ground failures systematically along surveyed lines (Bray and Stewart, 2000). Sancio (2003) and Bray and Sancio (2006) describe subsequent site investigations, which included borings with Standard Penetration Tests (SPT) and Cone Penetration Tests (CPT). Relatively undisturbed soil samples were collected from boreholes using thin-walled samplers (the resulting soil specimens are referred to subsequently as “intact”) and various laboratory tests were conducted, including cyclic triaxial tests, post-cyclic monotonic tests, and consolidation tests. Fig. 2 presents results of one of the cyclic triaxial tests on an intact specimen in a standard format applied for this project (data from Sancio 2003).</p>
+                <img style="width:600px" src="/images/fig-2.png" alt="Figure 2">
             </div>
-            <div class="flex flex-col justify-center items-center">
-              <img src="/images/fig-3.png" alt="" />
-              <img src="/images/fig-3-text-1.png" alt="" />
-              <img src="/images/fig-3-text-2.png" alt="" />
+            <div style="display: flex; flex-direction: row;">
+                <img style="width:600px" src="/images/fig-3.png" alt="Figure 3">
+                <p>The 2010-2011 Canterbury earthquake sequence (and notably the 2011 M6.2 Christchurch earthquake) in New Zealand led to extensive liquefaction-induced ground failures, resulting in significant damage to buildings, infrastructure networks, and critical lifeline systems throughout Christchurch and the surrounding region. The soil conditions in Christchurch include interlayered sands and low- to medium-plasticity silts. Following the earthquake, detailed site investigations were conducted, which included CPTs and borings to obtain both intact and disturbed soil samples. As described by Beyzaei et al. (2015, 2018), cyclic triaxial tests, post-cyclic reconsolidation tests, and index tests on these samples were performed at the University of Canterbury to assess the soil behavior under cyclic loading conditions, as part of a broader effort to better understand field performance at sites of interest. Fig. 3 illustrates a representative result of a cyclic triaxial test, in the same format used for Fig. 2, using data from Beyzaei et al. (2015, 2018).</p>
             </div>
-          </div>
-        </div>
-        <div class="lg:w-1/2">
-          <h2>Summary and Conclusions</h2>
-          <p>
-            This study presents a seismic soil liquefaction database
-            specifically for gravelly soils, utilizing dynamic penetration test
-            (DPT) results. The assessment protocol outlines the steps taken for
-            each case history to ensure an unbiased screening process.
-            Additionally, the study highlights the significance of grain size
-            effects in selecting the site investigation method, leading to the
-            investigation of new case histories using the grain size effect-free
-            DPT method. The study employs maximum likelihood models to assess
-            the initiation of seismic soil liquefaction, resulting in the
-            development of new liquefaction boundary curves. These new models
-            offer improvements in the engineering assessment of the probability
-            of seismic soil liquefaction initiation. The study addresses three
-            key factors: i) magnitude (duration) effects, ii) gravel content
-            (GC), and iii) effective overburden pressure effects. The maximum
-            likelihood estimation (MLE) model demonstrates that GC content has a
-            lesser impact compared to other parameters, leading to its exclusion
-            from the modeling efforts. The final model establishes an unbiased
-            foundation for evaluating liquefaction initiation, encompassing
-            overall uncertainties. Comparison of these models underscores the
-            challenge posed by the lack of case history data for gravelly soils,
-            hindering probabilistic modeling efforts. Increasing the number of
-            available case histories will be instrumental in enhancing modeling
-            efforts, enabling engineers in practical applications to incorporate
-            these insights into their projects.
-          </p>
-        </div>
-      </section>
-      <div class="w-full h-1 bg-black my-2"></div>
-      <section class="flex flex-col lg:flex-row lg:justify-center lg:gap-20">
-        <div class="lg:w-1/2">
-          <h2>References</h2>
-          <p>
-            Cao, Z. Z., Xu, X. Y., & Yuan, X. M. (2012). Dynamic Penetration
-            Tests (DPT) at Gravelly Soils Liquefaction Sites. Applied Mechanics
-            and Materials, 204–208, 425–428.
-            https://doi.org/10.4028/www.scientific.net/amm.204-208.425 <br />
-            Cao, Z.,Youd, T. L., & Yuan, X. (2013). Chinese Dynamic Penetration
-            Test for Liquefaction Evaluation in Gravelly Soils. Journal of
-            Geotechnical and Geoenvironmental Engineering, 139(8), 1320–1333.
-            https://doi.org/10.1061/(asce)gt.1943-5606.0000857 <br />
-            Cetin, K. O. (2000). “Reliability-based assessment of seismic soil
-            liquefaction initiation hazard”, Dissertation Submitted in Partial
-            Fulfillment of the Requirement for the Degree of Doctor of
-            Philosophy, University of California at Berkeley <br />
-            Cetin, K., & Seed, R. B. (2004). Nonlinear shear mass participation
-            factor (rd) for cyclic shear stress ratio evaluation. Soil Dynamics
-            and Earthquake Engineering, 24(2), 103–113.
-            https://doi.org/10.1016/j.soildyn.2003.10.008 <br />
-            Cetin, K. O., Seed, R. B., Kayen, R. E., Moss, R. E., Bilge, H. T.,
-            Ilgac, M., & Chowdhury, K. (2018). SPT-based probabilistic and
-            deterministic assessment of seismic soil liquefaction triggering
-            hazard. Soil Dynamics and Earthquake Engineering, 115, 698–709.
-            https://doi.org/10.1016/j.soildyn.2018.09.012 <br />
-            Chang, W. J., & Phantachang, T. (2016). Effects of gravel content on
-            the shear resistance of gravelly soils. Engineering Geology, 207,
-            78-90. Chang, W. J., Chang, C. W., & Zeng, J. K. (2014).
-            Liquefaction characteristics of gap-graded gravelly soils in K0
-            condition. Soil Dynamics and Earthquake Engineering, 56, 74-85.
-            Chen, J. R., & Kulhawy, F. H. (2014, February). Characteristics and
-            Intercorrelations of Index Properties for Cohesionless Gravelly
-            Soils. Geo-Congress 2014 Technical Papers.
-            https://doi.org/10.1061/9780784413272.001 <br />
-            Lopez, J., Vera-Grunauer, X. F., Rollins, K. M., & Salvatierra, G.
-            (2018). Gravelly Soil Liquefaction after the 2016 Ecuador
-            Earthquake. In Geotechnical Earthquake Engineering and Soil Dynamics
-            V. https://doi.org/10.1061/9780784481455.027 <br />
-            Olson, S. M., Green, R. A., Lasley, S. J., Martin, N. I., Cox, B.
-            R., Rathje, E. M., Bachhuber, J., & French, J. C. (2011).
-            Documenting Liquefaction and Lateral Spreading Triggered by the 12
-            January 2010 Haiti Earthquake. Earthquake Spectra, 27(1_suppl1),
-            93–116. https://doi.org/10.1193/1.3639270 <br />
-            Pirhadi, N., Wan, X., Zhang, H., Fang, Y., Jairi, I., & Hu, J.
-            (2022). DPT-based seismic liquefaction triggering assessment in
-            gravelly soils based on expanded case history dataset. Engineering
-            Geology, 311, 106894. https://doi.org/10.1016/j.enggeo.2022.106894
-            <br />
-            Rollins, K. M., Amoroso, S., Milana, G., Minarelli, L., Vassallo,
-            M., & Di Giulio, G. (2020). Gravel Liquefaction Assessment Using the
-            Dynamic Cone Penetration Test Based on Field Performance from the
-            1976 Friuli Earthquake. Journal of Geotechnical and Geoenvironmental
-            Engineering, 146(6).
-            https://doi.org/10.1061/(asce)gt.1943-5606.0002252
-          </p>
-        </div>
-        <div class="lg:w-1/2">
-          <p>
-            Rollins, K. M., Roy, J., Athanasopoulos-Zekkos, A., Zekkos, D.,
-            Amoroso, S., & Cao, Z. (2021). A New Dynamic Cone Penetration
-            Test–Based Procedure for Liquefaction Triggering Assessment of
-            Gravelly Soils. Journal of Geotechnical and Geoenvironmental
-            Engineering, 147(12).
-            https://doi.org/10.1061/(asce)gt.1943-5606.0002686 <br />
-            Rollins, K. M., Roy, J., Athanasopoulos-Zekkos, A., Zekkos, D.,
-            Amoroso, S., Cao, Z., Milana, G., Vassallo, M., & di Giulio, G.
-            (2022). A New Vs-Based Liquefaction-Triggering Procedure for
-            Gravelly Soils. Journal of Geotechnical and Geoenvironmental
-            Engineering, 148(6).
-            https://doi.org/10.1061/(asce)gt.1943-5606.0002784 <br />
-            Roy, J., Rollins, K. M., Athanasopoulos-Zekkos, A., Harper, M.,
-            Linton, N., Basham, M. R., Greenwood, W., & Zekkos, D. (2022).
-            Gravel liquefaction assessment using dynamic cone penetration and
-            shear wave velocity tests based on field performance from the 1964
-            Alaska earthquake. Soil Dynamics and Earthquake Engineering, 160,
-            107357. https://doi.org/10.1016/j.soildyn.2022.107357 <br />
-            Seed, H. B., & Idriss, I. M. (1971). Simplified Procedure for
-            Evaluating Soil Liquefaction Potential. Journal of the Soil
-            Mechanics and Foundations Division, 97(9), 1249–1273.
-            https://doi.org/10.1061/jsfeaq.0001662 <br />
-            Seed, R. B., Chang, S. W., Dickenson, S. E., and Bray, J. D. (1997)
-            “Site-Dependent Seismic Response Including Recent Strong Motion
-            Data.” Proc., Special Session on Earthquake Geotechnical
-            Engineering, XIV International Conf. On Soil Mechanics and Foundtion
-            Engineering, Hamburg, Germany, A. A, Balkema Publ., Sept. 6-12, pp.
-            125-134 Tsuchida, H. (1970) Prediction and countermeasure against
-            the liquefaction in sand deposits. Seminar in the Port and Harbor
-            Research Institute, 3.1- 3.33.
-          </p>
-        </div>
-      </section>
+            <div style="display: flex; flex-direction: row;">
+                <p>Test data like that in Figs. 2-3 can be used to evaluate soil response leading to an assessment of sand-like or clay-like soil behavior, which is useful for the development of susceptibility models. Another useful application is to use the data to evaluate the cyclic strength of soil, which is important for various geotechnical projects. Cyclic tests have been performed for several projects in the Pacific Northwest to measure the cyclic strength of low- to medium-plasticity fine-grained soils at various sites. Researchers at Oregon State University have conducted cyclic direct simple shear tests to evaluate the cyclic strength of these soils, as described by Jana and Stuedlein (2021, 2022), Dadashiserej et al. (2022a,b), Stuedlein et al. (2023b) and Dadashiserej et al. (2024). The results from these tests have been incorporated into the NGL database. Fig. 4 illustrates one of the results from a cyclic direct simple shear test, highlighting the cyclic response and strength characteristics of the silty soils in Oregon.</p>
+                <img style="width:600px" src="/images/fig-4.png" alt="Figure 4">
+            </div>
+        </section>
+
+        <section class="metrics">
+            <h2>Quantitative Susceptibility Metrics</h2>
+            <p>Stress-strain hysteresis loops are different for susceptible and non-susceptible soils, with non-susceptible soils generally having “fatter” loops with more hysteretic damping, larger shear stress at the center of the loop, and less-pronounced dilatancy-induced strain hardening. While these characteristics may be obvious upon visual inspection, there is value in expressing these features in a quantitative manner so that numerical ranges for different types of soil behavior can be defined. Such metrics would facilitate uniform interpretation of cyclic test data across the database for model development. As shown in Fig. 5, Stuedlein et al. (2023) proposed a series of parameters to meet this need, which included: i) difference in cyclic shear stress amplitude at zero strain, ii) minimum tangent modulus of the cycle (minimum tangent shear modulus for CDSS and minimum tangent Young’s modulus for CTX), and iii) angle between stress reversals, within a given cycle. We modify these metrics by (1) rendering stress and strain quantities in dimensionless form by using decimal strain values instead of percent and by normalizing stress by the maximum absolute shear/deviatoric stress and (2) defining stress amplitude at the center of each hysteresis loop rather than at zero strain. The second modification was our observation that direct simple shear tests with a non-zero static shear stress tend to accumulate strain in the direction of the static shear stress and that triaxial tests tend accumulate larger strains in the extension direction. Centering the hysteresis loop is therefore useful and is achieved by computing the stress amplitude at the average strain value for the cycle. Moreover, it should be noted that other factors such as maximum pore pressure generation (ru,max) have been discussed and are likely to be implemented in the future. </p>
+            <img style="width:750px" src="/images/fig-5.png" alt="Figure 5">
+            <div style="display: flex; flex-direction: row;">
+                <p>The parameters illustrated in Fig. 5 were computed for the tests listed in Table 1, with the results summarized in Table 2. Values in parentheses represent median and standard deviation values of each parameter, respectively. The normalized values of minimum modulus and delta stress presented in Table 2 use the absolute maximum stress for each respective loop as the normalizing stress. One notable trend is that upper and lower tend to be similar for CDSS tests, but lower is significantly larger than upper for CTX tests. We believe this is related to differences in the extension/compression regimes of a cyclic triaxial test, whereas direct simple shear tests without static shear stress are more symmetrical.</p>
+                <img style="width:600px; padding-left: 20px;" src="/images/table-2.png" alt="Table 2">
+            </div>
+            <p>Fig. 6 illustrates the regions selected for calculating the interpreted parameters from the test results. In the figure, red lines indicate the lines selected for calculating the angle of stress reversal at the upper and lower portions of the cycle. The blue line represents the difference in stress at the location of the average strain within the cycle. The green line indicates the minimum modulus in the middle portion of the loop.</p>
+            <img style="width:750px" src="/images/fig-6.png" alt="Figure 6">
+        </section>
+        <section class="discussion">
+            <h2>Discussion and Results</h2>
+            <p>Liquefaction risk assessments encompass three critical phases: susceptibility, triggering, and effects. Research teams have been developing models for liquefaction triggering and effects using the Next Generation Liquefaction (NGL) project database (e.g., Hudson et al. 2024). Aside from improving and expanding the NGL database, the long-term aim of the present initiative is to improve understanding of soil properties that correlate with liquefaction susceptibility, and ultimately to develop probabilistic models that reflect that improved understanding. 
+                The practical importance of liquefaction susceptibility analysis is that different methods are used to evaluate strength loss and effects for susceptible and non-susceptible materials. For susceptible or "sand-like" soils, semi-empirical correlations are used to evaluate triggering potential and associated cyclic strengths, both in NGL and legacy models (e.g., Boulanger and Idriss 2016; Cetin et al. 2018). For non-susceptible or "clay-like" soils, the potential for cyclic softening and associated cyclic strengths are evaluated based on laboratory test results (Boulanger and Idriss 2006). Due to distinct procedures for susceptible and non-susceptible materials, the evaluation of susceptibility is often a critical element in the analysis of ground failure potential for fine-grained soils.
+                In this paper, we have described a number of interpreted parameters from undrained cyclic testing that can be used to identify soil type as sand- or clay-like. Additional metrics are likely to be added in future work. The selected interpreted parameters include the: i) minimum normalized modulus within the cycle, ii) normalized stress difference at the average strain between maximum and minimum values corresponding to a specific cycle, iii) angle between stress reversals. These parameters have been evaluated for 145 CTX and 207 CDSS tests, with the result in Table 2. 
+                Future research will identify the ranges of these interpreted parameters that correspond to sand- and clay-like soil behavior and will investigate correlations between these interpreted parameters and more readily obtained material properties such as LL, PI, Ic, and others.
+                </p>
+        </section>
+        <section class="references">
+            <h2>References</h2>
+            <p>Beyzaei CZ, Bray JD, Cubrinovski M, Riemer M, Stringer ME, Jacka M, et al. Liquefaction resistance of silty soils at the Riccarton Road site, Christchurch, New Zealand. In: Proceedings of the 6th international conference earthquake geotechnical engineering. Christchurch, New Zealand; 2015.</p>
+
+            <p>Beyzaei, C.Z. (2017). "Fine-grained soil liquefaction effects in Christchurch, New Zealand", PhD dissertation, University of California, Berkeley.</p>
+
+            <p>Beyzaei, C. Z., Bray, J. D., Cubrinovski, M., Riemer, M., & Stringer, M. (2018). Laboratory-based characterization of shallow silty soils in southwest Christchurch. Soil Dynamics and Earthquake Engineering, 110, 93–109. <a href="https://doi.org/10.1016/j.soildyn.2018.01.046">https://doi.org/10.1016/j.soildyn.2018.01.046</a></p>
+
+            <p>Boulanger, R. W., & Idriss, I. M. (2016). CPT-Based Liquefaction Triggering Procedure. Journal of Geotechnical and Geoenvironmental Engineering, 142(2). <a href="https://doi.org/10.1061/(asce)gt.1943-5606.0001388">https://doi.org/10.1061/(asce)gt.1943-5606.0001388</a></p>
+
+            <p>Boulanger, R. W., & Idriss, I. M. (2024). Cyclic Strength Evaluation Criteria for Sand-Like, Clay-Like, and Intermediate Soils. GeoCongress2024. <a href="https://doi.org/10.1061/9780784485309.047">https://doi.org/10.1061/9780784485309.047</a></p>
+
+            <p>Bray, J. D., & Sancio, R. B. (2006). Assessment of the liquefaction susceptibility of Fine-Grained soils. Journal of Geotechnical and Geoenvironmental Engineering, 132(9), 1165–1177. <a href="https://doi.org/10.1061/(asce)1090-0241(2006)132:9(1165)">https://doi.org/10.1061/(asce)1090-0241(2006)132:9(1165)</a></p>
+
+            <p>Bray, JD and JP Stewart: coordinators (2000). Chapter 8: Damage patterns and foundation performance in Adapazari. Kocaeli, Turkey Earthquake of August 17,1999 Reconnaissance Report, TL Youd, JP Bardet, and JD Bray, eds., Earthquake Spectra, Supplement A to Vol. 16, 163-189.</p>
+
+            <p>Cetin, K. O., Seed, R. B., Kayen, R. E., Moss, R. E., Bilge, H. T., Ilgac, M., & Chowdhury, K. (2018b). SPT-based probabilistic and deterministic assessment of seismic soil liquefaction triggering hazard. Soil Dynamics and Earthquake Engineering, 115, 698–709. <a href="https://doi.org/10.1016/j.soildyn.2018.09.012">https://doi.org/10.1016/j.soildyn.2018.09.012</a></p>
+
+            <p>Dadashiserej, A., Jana, A., Stuedlein, A.W., & Evans, T.M. (2022a). “Effect of Strain History on the Monotonic and Cyclic Response of Natural and Reconstituted Silts.” Soil Dyn. Earthq. Eng., 160, 107329.</p>
+
+            <p>Dadashiserej, A., Jana, A., Ortiz, S. C., Walters, J. J., Stuedlein, A. W., & Evans, T. M. (2022b). “Monotonic, cyclic, and post-cyclic response of Willamette River silt at the Van Buren Bridge.” Geo-Congress 2022: Geophys. Earthq. Eng. Soil Dyn., GSP No. 334, ASCE, Reston, VA. pp. 431-443.</p>
+
+            <p>Dadashiserej, A., Jana, A., Stuedlein, A. W., & Evans, T. M. (2024). Cyclic Resistance Models for Transitional Silts with Application to Subduction Zone Earthquakes. Journal of Geotechnical and Geoenvironmental Engineering, 150(2). <a href="https://doi.org/10.1061/jggefk.gteng-11671">https://doi.org/10.1061/jggefk.gteng-11671</a></p>
+
+            <p>Hudson, KS, K Ulmer, SJ Brandenberg, P Zimmaro, SL Kramer, JP Stewart (2024). A framework for probabilistic assessment of liquefaction manifestation, Geo-Congress 2024: Geotechnics of Natural Hazards, Vancouver, BC, February 2024, Geotechnical Special Publication No. 349, TM Evans, N Stark, and S Chang (Eds.), 152-160, ASCE Geo-Institute</p>
+
+            <p>Jana, A., & Stuedlein, A. W. (2021). Dynamic In Situ Nonlinear Inelastic Response of a Deep Medium Dense Sand Deposit. Journal of Geotechnical and Geoenvironmental Engineering, 147(6), 04021039.</p>
+
+            <p>Jana, A., & Stuedlein, A. W. (2022). Dynamic, in situ, nonlinear-inelastic response and post-cyclic strength of a plastic silt deposit. Canadian Geotechnical Journal, 59(1), 111-128.</p>
+
+            <p>Sancio, R. B. (2003). “Ground failure and building performance in Adapazari, Turkey.” Ph.D. thesis, Univ. of California at Berkeley, Berkeley, Calif.</p>
+
+            <p>Stuedlein, A., Alemu, B., Evans, T. M., Kramer, S., Stewart, J., Ulmer, K., & Ziotopoulou, K. (2023a). PEER Workshop on Liquefaction Susceptibility. In PEER. <a href="https://doi.org/10.55461/bpsk6314">https://doi.org/10.55461/bpsk6314</a></p>
+
+            <p>Stuedlein, A. W., Dadashiserej, A., Jana, A., & Evans, T. M. (2023b). Liquefaction susceptibility and cyclic response of intact nonplastic and plastic silts. Journal of Geotechnical and Geoenvironmental Engineering, 149(1). <a href="https://doi.org/10.1061/(asce)gt.1943-5606.0002935">https://doi.org/10.1061/(asce)gt.1943-5606.0002935</a></p>
+
+            <p>Ulmer K.J., Zimmaro P., Brandenberg S.J., Stewart J.P., Hudson K.S., Stuedlein A.W., Jana A., Dadashiserej A., Kramer S.L., Cetin K.O., Can G., Ilgac M., Franke K.W., Moss R.E.S., Bartlett S.F., Hosseinali M., Dacayanan H., Kwak D.Y., Stamatakos J., Mukherjee J., Salman U., Ybarra S., Weaver T. (2023). Next-Generation Liquefaction Database, Version 2. Next-Generation Liquefaction Consortium. DOI: <a href="https://doi.org/10.21222/C23P70">10.21222/C23P70</a>.</p>
+        </section>
     </main>
-    <nav
-      class="bg-[#2474AE] w-full font-[Jomhuria] flex justify-between items-center p-6 mt-10 lg:px-20"
-    >
-      <img src="/images/Geo_Image.png" alt="" class="w-1/3 lg:w-36" />
-      <img src="/images/UCLA_Image.png" alt="" class="w-1/3 lg:w-36" />
-    </nav>
-  </body>
+</body>
 </html>

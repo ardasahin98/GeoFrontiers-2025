@@ -1,0 +1,142 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #f8f9fa;
+}
+
+.nav {
+    background-color: #2474AE;
+    text-align: center;
+    color: white;
+}
+
+.nav-images {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.nav-images img {
+    width: 50px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    text-align: justify;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+.author-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    margin-top: 30px;
+} */
+
+.author img {
+    width: auto;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* .author-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+} */
+
+.abstract, .introduction, .datasets, .metrics, .discussion, .references {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.abstract p {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 15px;
+}
+
+.introduction p {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 15px;
+}
+
+.datasets p {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 15px;
+}
+
+.metrics p {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 15px;
+}
+
+.discussion p {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 15px;
+}
+
+.references p {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 5px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.author {
+    width: 270px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+p {
+    margin:0;
+    font-size: 16px;
+    padding-left:5px;
+    padding-right:5px;
+}
