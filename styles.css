@@ -5,25 +5,62 @@ body {
     color: black;
     background-color: #f8f9fa;
 }
+h1 {
+    font-size: 32px;
+    padding: 0 200px;
+    line-height: 150%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 0 350px 20px;
+    line-height: 150%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+p {
+    margin:0;
+    font-size: 16px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
 
 .nav {
     background-color: #2474AE;
     text-align: center;
     color: white;
+    padding: 20px 0;
 }
 
 .nav-images {
     display: flex;
-    margin-bottom: 20px;
+    gap: 10px;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 .nav-images img {
     width: 50px;
 }
 
-.title {
-    font-size: 2rem;
-    font-weight: bold;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
 }
 
 .content {
@@ -35,91 +72,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-/* 
+
+
 .author-section {
     display: flex;
     justify-content: center;
     gap: 50px;
     text-align: center;
     margin-top: 30px;
-} */
-
-.author img {
-    width: auto;
-    height: 120px;
-    border-radius: 50%;
-}
-
-/* .author-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 10px;
-} */
-
-.abstract, .introduction, .datasets, .metrics, .discussion, .references {
-    margin-top: 30px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 75px;
-    margin-right: 75px;
-}
-
-.abstract p {
-    font-size: 16px;
-    line-height: 150%;
-    padding: 15px;
-}
-
-.introduction p {
-    font-size: 16px;
-    line-height: 150%;
-    padding: 15px;
-}
-
-.datasets p {
-    font-size: 16px;
-    line-height: 150%;
-    padding: 15px;
-}
-
-.metrics p {
-    font-size: 16px;
-    line-height: 150%;
-    padding: 15px;
-}
-
-.discussion p {
-    font-size: 16px;
-    line-height: 150%;
-    padding: 15px;
-}
-
-.references p {
-    font-size: 16px;
-    line-height: 150%;
-    padding: 5px;
-    font-style: italic;
-}
-
-h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-    margin: 20px auto;
 }
 
 .author {
@@ -132,11 +92,96 @@ img {
     border: 1px solid #333;
     border-radius: 10px;
     margin: 5px;
+    background-color: white;
 }
 
-p {
-    margin:0;
-    font-size: 16px;
-    padding-left:5px;
-    padding-right:5px;
+.author img {
+    width: auto;
+    height: 120px;
+    border-radius: 50%;
 }
+
+.author-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.authors {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.abstract, .introduction, .datasets, .metrics, .discussion, .references {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 15px;
+}
+
+
+.references p {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 5px;
+    font-style: italic;
+}
+
+.link-container {
+    padding-bottom: 10px;
+}
+
+.ngl-link {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    
+}
+.textImg {
+    display: flex; 
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1024px) {
+    h1, h2 {
+        padding: 20px;
+    }
+    .nav-images {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .nav-container {
+        flex-direction: column;
+    }
+    .content {
+        padding: 20px;
+        margin: 0;
+    }
+    .abstract, .introduction, .datasets, .metrics, .discussion, .references {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .textImg {
+        flex-direction: column;
+    }
+  }
+
+
